@@ -1,10 +1,11 @@
-const DB = process.env.DB || "MONGODB";
 const User = require("./mongodb/User");
 const _ = require("lodash");
-
 const { createError } = require("../../utils/handleErrors");
 const { generateAuthToken } = require("../../auth/providers/jwt");
 const { comparePassword } = require("../helpers/bcrypt");
+
+const config = require("config");
+const DB = config.get("DB");
 
 const registerUser = async (normalizedUser) => {
   if (DB === "MONGODB") {
