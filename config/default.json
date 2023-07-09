@@ -1,0 +1,7 @@
+{
+  "apiKey": "124eiuhid12389eh182e",
+  "DB": "MONGODB",
+  "validator": "Joi",
+  "ENVIRONMENT": "development",
+  "LOGGER": "morgan"
+}
