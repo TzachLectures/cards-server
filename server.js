@@ -5,6 +5,7 @@ const logger = require("./logger/loggerService");
 const router = require("./router/router");
 const connectToDb = require("./DB/dbService");
 const { handleError } = require("./utils/handleErrors");
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 8181;
